@@ -17,11 +17,30 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-gilroy);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+p.zh-cn {
+  font-family: var(--font-oppo-sans);
+}
+
+/* global.css */
+.doc-container {
+  width: 600px; /* 控制页面宽度 */
+  max-height: 80vh; /* 页面最大高度 */
+  overflow-y: visible; /* 滚动条可见 */
+  padding: 20px; /* 内部留白 */
+}
+
+.page {
+  min-height: 100vh; /* 设置每页的最小高度 */
+  padding: 20px; /* 页面内容的间距 */
+  outline: none; /* 移除默认的焦点边框 */
+  word-wrap: break-word; /* 自动换行 */
 }
